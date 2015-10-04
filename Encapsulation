@@ -1,0 +1,102 @@
+import java.util.Scanner;
+
+public class Encapsulation1 {
+
+	
+	public static void main(String[] args) {
+	 
+		char reponse;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Hello, My name is Joe. Might I have the pleasure to help you today with opening a Bank account? y or n?" );
+		reponse = input.next().charAt(0);
+			switch(reponse){
+			case 'y' : 
+				System.out.println("Well, you chose the right person. Let's get started!");
+				EncapExample test1 = new EncapExample();
+				test1.setBalance(10000000);
+				
+				Scanner input1 = new Scanner(System.in);
+				System.out.println("What's username would you like?");
+				String userId = input1.nextLine();
+				test1.setUserId(userId);
+				
+				Scanner input2 = new Scanner(System.in);
+				System.out.println("What's password would you like?");
+				String pass = input2.nextLine();
+				test1.setPassword(pass);
+				
+				Scanner input3 = new Scanner(System.in);
+				System.out.println("What's is your social security number?");
+				int ssn = input3.nextInt();
+				test1.setSsn(ssn);
+				
+				Scanner input4 = new Scanner(System.in);
+				System.out.println("How much would you like for a starting Balance?");
+				double balance = input3.nextDouble();
+				test1.setBalance(balance);
+			
+				System.out.println("OK, I want to transmit your information to the system. What is shown is what will be seen.");
+				System.out.println("UserId is: " + test1.getUserId());
+				System.out.println("Balance is: " + test1.getBalance());
+				System.out.println("Your Account is registered. Thank you for doing business today.  Have a nice day!");
+				break;
+			case 'n' :	
+				System.out.println("I understand and respect your choice. Let us know if you decide to change your mind. Wish you a pleasant day.");
+				break;
+			}
+		
+		
+		/* 1)What is encapsulation?
+		 *   Encapsulation is like putting something valuable inside a protective capsule 
+		 *   The intent is to hide certain data to protect it from being seen from someone else
+		 *   For example, only certain people may need to see your social security number in a bank acount
+		 *   Encapsulation can be thought of as the packing of data and functions into a single component. 
+		 *   The features of encapsulation are supported using classes in most object-oriented programming languages.
+		 *   
+		 * 2)What are advantages of it?
+		 * You can take an internal and external view of an object
+		 * The internal view is the structure the data, like the algorithms used by its methods
+		 * 
+		 * The external view is the interaction of the object with other objects in the program. The object is an encapsulated entity providing 
+		 * services. These services define the interface to the object.
+		 * 
+		 * So one advantage is to group data code structure into one place and hide 
+		 * irrelevant details from the user.  This practice is known as information hiding,
+		 * where algorithms are invisible to portions of the system that do not need them.
+		 * 
+		 * 3)Write  program to perform encapsulation?
+		 * 
+		 * 
+		 * 4)What are access specifiers or visibility modifiers?
+		 * 
+		 * 
+		 * 
+		 * Visibility modifiers is a java reserved word that specifies particular characteristics of a method or data vale to accomplish encapsulation
+		 * 
+		 * 
+		 * 5)List visibility modifiers 
+		 *   Private 
+		 *   Protected
+		 *   Public
+		 *   Package or default
+		 * 
+		 * 6) Write in detail about all visibility modifiers?
+		 * 
+		 *   Private -accessed from anywhere
+		 *   Protected-these members of base class are safeguarded in derived class
+		 *   Public-accessed from anywhere
+		 *   Package or default-only from within the package
+		 * 
+		 * 7) What is return type and return statement?
+		 *      
+		 *   Return type of a method indicates the tpe of value that the method sends back to the calling location
+		 *   Void methods do not return a value
+		 *   
+		 *   The return statement specifies the value that will be returned.  The expression must conform to the return type.
+		 *   Get methods are examples of a method that as a return type and statement.
+		 */
+
+	}
+
+}
