@@ -1,0 +1,66 @@
+//File Name: ExceptionExample
+
+public class ExceptionExample {
+
+	public static void main(String[] args) {
+		int ages[] = new int[5];
+		try{
+			System.out.println("Access element six :" + ages[6]);
+		}catch(ArrayIndexOutOfBoundsException me){
+			System.out.println("Exception thrown :" + me);
+		}
+		finally{
+			ages[0] = 38;
+			System.out.println("First element value: " + ages[0]);
+			System.out.println("The finally statement is executed");
+		}
+		
+	}
+}
+/*
+1)Write a program to demonstrate exceptions?
+Look at the ExceptionExample Java file
+
+2)What are exceptions?
+//An exception is either checked or unchecked. An exception is a problem that arises during the execution of a program.
+ * An exception can occur for many different reasons including user had entered invalid data. A file that needs to be opened cannot be found.
+ * Or a network connection has been lost in the middle of communications or the JVM has run out of memory. 
+
+3) What are types of exceptions?
+// you have both checked and unchecked exceptions
+ * 
+ * checked exceptions either must be caught by a method, or must be listed in the throws clause of any method that 
+ * may throw throw or propagate it. Checked exceptions is an exception that is typicallya uer error or a problem that cannot be 
+ * foreseen by the programmer.  For example, if a file is to be opend, but the file cannot be found, an exceptions occurs. These 
+ * exceptions cannot be simply ignored at the time of compilation.
+ *
+ *Unchecked exceptions are runtimeExceptions that do not require explicit handling, though it could be processed that way. As opposed 
+ *to checked exceptions, runtime exceptions are ignored at the time of compilation.
+ *
+ *
+4) List most common exceptions?
+
+JVM exceptions- NullPointerException, ArrayIndexOutOfBoundsException, ClassCastException
+
+Programmatic Exceptions: IllegalArgumentException, IllegalStateException
+
+5)What is throws keyword will do?
+
+The throws keyword appears at the end of a method's signature. You can throw an exception, either a newly instantiated one 
+or an exception that you just caught, by using the throw keyword. 
+
+6)What will super keyword will do?
+    Takes an execution from the Parent class. More specifically, you use super(); which is implied if no call to a parent 
+    constructor is given and a no-arg, parent constructor exists. Exception itself extends 
+  from Throwable, which is really the class providing this functionality, but it all stems from how you work with exception as it serves
+  as a pass-thru to Throwable. 
+
+7) Can we create user defined exception? Yes
+  You can create your own exceptions in Java. Keep the following points in mind when writing your own exception classes.
+  All exceptions must be a child of Throwable. 
+  If you want to write a checked exception that is automatically enforced by the Handle or Declare Rule, you need to extend the
+  Exception class. If you want to write a runtime exception, you need to extend the RuntimeException class. 
+
+
+*/
+
