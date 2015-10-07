@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+
+/**
+ * @author jk
+ *@version
+ *@
+ *
+ */
+public class Arithmetic {
+		
+	
+// main method
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		//@	Scanner input = new Scanner(System.in);
+		//declare variables
+	    int x =10;
+	    int y = 25;
+		float z = 4.5f;
+		/*
+		//TODO
+		/
+		/
+		//FIXME
+		/
+		//XXX
+		/
+		*/
+		//Addition
+		System.out.print("addition: ");
+		System.out.println(x + y);
+		
+		//Subraction
+		System.out.print("subtraction: ");
+		System.out.println(y-x);
+		
+		//Multiplication
+		System.out.print("Multiplication: ");
+		System.out.println(y*x);
+		
+		//Division
+		System.out.print("Division: ");
+		System.out.println(y/x);
+		
+		//Modulus or remainder 
+		System.out.print("Modulus: ");
+		System.out.println(y%x);
+		
+		//floats and integers addition
+		System.out.print("floats and Integers: ");
+		System.out.println(y+z);
+		
+		//floats and integers multiplication
+		System.out.print("floats and Integers multiplication: ");
+		System.out.println(y*z);
+				
+		//floats and integers division
+		System.out.print("floats and Integers division: ");
+		System.out.println(y/z);	
+				
+		//floats and integers remainder
+		System.out.print("floats and Integers remainder: ");
+		System.out.println(y%z);
+		
+		
+			//infinity
+			System.out.print("divide by 0 gets infinity: ");
+			System.out.println(z/0);
+		
+				
+
+	}
+
+}
