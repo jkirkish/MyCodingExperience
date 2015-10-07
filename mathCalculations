@@ -1,0 +1,153 @@
+import java.math.*;
+
+
+/*
+ * 
+ * author Joseph Kirkish
+ */
+
+public class mathCalculations {
+
+	int inches, int1, even,remainder;
+	float euros, pounds, fahrenheit, equivalent, float1;
+	double equivalent2, double1, area, perimeter;
+	char char1;
+	short short1;
+	byte byte1,byte2;
+	long long1;
+	boolean boolean1;
+	
+	//convert feet to inches
+	public int toInches(int feet){
+		
+		inches = feet * 12;
+		return inches;
+	      	
+	}
+	// get Euros
+	public float getEuros(float dollars){
+		//exchange rate last checked was $1.12
+		euros = dollars * 1.12f;
+		return euros;
+	}
+	public float getPounds(float dollars){
+		//exchange rate last checked was $1.53
+		pounds = dollars * 1.53f;
+		return pounds;
+	}
+	//convert celsius to Fahrenheit
+	public float celsiusToFahr(float celsius){
+		
+		fahrenheit = celsius * (9/5) + 32;
+		return fahrenheit;
+	}
+	//convert an Integer to a float equivalent
+	public float floatEquivalent(int Integer){
+		
+		equivalent = Integer;
+		return equivalent;
+	
+	}
+	//convert an integer to a double
+    public double doubleEquivalent(int Integer){
+		
+		equivalent2 = Integer;
+		return equivalent2;
+	
+	}
+    //create a calculator
+    public double Add(double number1, double number2){
+    	
+    	return number1 + number2;
+    }
+    public double Subtract(double number1, double number2){
+    	
+    	return number1 - number2;
+    }
+    public double Multiply(double number1, double number2){
+    	
+    	return number1 * number2;
+    }
+    public double Division(double number1, double number2){
+    	
+    	return number1 / number2;
+    }
+    public double Remainder(double number1, double number2){
+    	
+    	return number1 % number2;
+    }
+    //printout the default values of int , float, double , char , short, byte , long and boolean
+    public void defaultValues(){
+        
+    	System.out.println(int1);
+    	System.out.println(float1);
+    	System.out.println(double1);
+    	System.out.println(char1);
+    	System.out.println(short1);
+    	System.out.println(byte1);
+    	System.out.println(long1);
+    	System.out.println(boolean1);
+    }
+    //take area of circle as the side of square and find the perimeter of square
+    public void findSquarePerimeter(int radius){
+    	   //area of a circle is pi * r2
+    	   //area of a circle assumes it is the side of the square
+           area = (Math.PI) * Math.pow(radius,2);
+           perimeter = 4 * area;
+           System.out.println("Perimeter of the square is: " + perimeter);
+    }
+    public void toEven(int number){
+    
+        System.out.println("Even number is: " + (number%2));
+        
+    }
+    //input as even and get remainder as 1
+    public int remainder1(int number1){
+    	
+      int number = number1;	
+      if(number % 2 == 0){
+    	  number = number%2;
+    	  number++;
+        
+    }
+      else if(number % 2 == 1){
+    	  number = number % 2;
+    	  
+      }
+      return number;
+    }
+    //convert long to byte and result to float and its result to double
+    public double convertDataTypes(long input){
+    
+    	
+    	Long a = new Long(input);
+    	byte byte1 = a.byteValue();
+    	float float1 = byte1;
+    	double double1 = float1;
+    	return double1;
+    }
+    /*substract area of rectangle from area of 
+     square and multiply area of circle with 
+     the output and divide with perimeter of 
+     square 
+     */
+    public double GeometicShapeCalcuations(double length, double width, double sqrSide, double CirRadi){
+    	
+    	double RectArea = length * width;
+    	System.out.println("RectArea is " + RectArea);
+    	double SqArea = Math.pow(sqrSide, 2);
+    	System.out.println("SqArea is " + SqArea);
+    	double CirArea = Math.PI * Math.pow(CirRadi, 2); 
+    	System.out.println("CirArea is " + CirArea);
+    	double SqPerimeter = 4 * sqrSide;
+    	System.out.println("SqPerimeter is " + SqPerimeter);
+    	double result1 = SqArea - RectArea;
+    	System.out.println("result1 is " + result1);
+    	double result2 = CirArea * result1;
+    	System.out.println("result2 is " + result2);
+    	double finalAnswer = SqPerimeter/result2;
+    	return finalAnswer;
+    	
+    }
+    
+}
