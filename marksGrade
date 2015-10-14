@@ -1,0 +1,28 @@
+/*
+ * 
+ * 
+ * 
+ * @author Joseph Kirkish
+ * date 06/03/2015
+ */
+
+
+
+public class marksGrade {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int grade = 84; //we know that the grade is 84
+		
+		if ((grade >= 90 && (grade <=100))) 
+			System.out.println("Marks grade is A");
+		else
+			if((grade >= 80 && (grade <=89)))
+				System.out.println("Marks grade is B");
+			else
+				if((grade >= 70 && (grade <=79)))
+					System.out.println("Marks grade is C");
+	}
+
+}
