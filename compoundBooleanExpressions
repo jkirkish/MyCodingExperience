@@ -1,0 +1,89 @@
+
+/*
+ * 
+ * 
+ * 
+ * @author Joseph Kirkish
+ * date 06/03/2015
+ */
+
+public class compoundBooleanExpression {
+	
+	int bankAccount; 
+	/**
+	 * @return the bankAccount
+	 */
+	public int getBankAccount() {
+		return bankAccount;
+	}
+
+	/**
+	 * @param bankAccount the bankAccount to set
+	 */
+	public void setBankAccount(int bankAccount) {
+		this.bankAccount = bankAccount;
+	}
+
+	/**
+	 * @return the payment
+	 */
+	public int getPayment() {
+		return payment;
+	}
+
+	/**
+	 * @param payment the payment to set
+	 */
+	public void setPayment(int payment) {
+		this.payment = payment;
+	}
+
+	/**
+	 * @return the age
+	 */
+	public int getAge() {
+		return age;
+	}
+
+	/**
+	 * @param age the age to set
+	 */
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	int payment; 
+	int age;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub"
+		
+		/*
+		 * CompoundBoolean expressions can be combined using the "and"(&&) operator 
+		 * You can also use the "or" (||) operator 
+		 * In addition the "!" operator can be used in conjunction with the other two
+		 * 
+		 */
+		int bankAccount = 1000003;
+		int payment = 501;
+		int age = 34;
+		boolean criminal = true;
+		int immigrants = 1;
+		
+		while(immigrants <= 5)
+		{
+			if((bankAccount >= 100000) && (payment >= 500))//compoundBoolean expression
+			{ 
+				System.out.println("We won't hurt you, but we may collect more money: ");
+				bankAccount--;
+				payment--;
+			}
+			else if((age >= 34) || (criminal)) //compound Boolean Expression
+			{
+				System.out.println("If you are that young, sure we will take you in for training");
+			}
+             immigrants++;
+             
+		}
+	}
+}
