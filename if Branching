@@ -1,0 +1,56 @@
+/*
+ * 
+ * 
+ * 
+ * @author Joseph Kirkish
+ * date 06/03/2015
+ */
+
+
+public class Branching {
+
+	public static void main(String[] args) {
+		/*What is Branching
+		 * A branching statement chooses between two or more possible actions
+		 *  You have an if statement that is true which executes code
+		 * If the conditional statement is false, the else statement executes.
+		 * When the else part is omitted and the expression after the if is false, no action occurs
+		 */
+	
+		//One example is the branching statement that chooses between two or more 
+		// possible actions
+		float x = 1000f;
+         
+		
+		
+		if(x >= 500) //This conditional statement is true
+		{
+              //So this print statement inside brackets is whats executed
+			System.out.println("X must be greater 500 then!");
+		}
+		else{
+			//The else is not 
+			System.out.println("Oh, I guess X was something smaller");	
+		}
+		
+		
+		if(x <= 500) //This conditional statement is false
+		{
+              //The code in the if brackets is not executed
+			System.out.println("X must be greater 500 then!");
+		}
+		else{
+			//So this print statement inside the else brackets is executed
+			System.out.println("Oh, I guess X was something smaller");	
+		}
+		
+		
+		//nested if statements
+		
+
+	}
+
+}
+
+
+
