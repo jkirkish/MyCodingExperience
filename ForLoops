@@ -1,0 +1,24 @@
+/*
+ * @Date 06/16/2016
+ * @author JosephKirkish
+ * 
+ */
+public class OneForLoopAndNestingForLoops {
+
+	public static void main(String[] args) {
+		// nested for loops
+		
+		for(int x = 0; x<10; x++){
+			//outer loop here
+			System.out.println("________________________");
+			System.out.println("OUTER LOOP IS : " + x);
+			System.out.println("_______________________");
+			for(int y = 0; y<10; y++){
+				//inner loop here
+				System.out.println(" Inner loop value is: " + y);
+			}
+		}
+
+	}
+
+}
