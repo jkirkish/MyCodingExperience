@@ -1,0 +1,58 @@
+*
+ * 
+ * 
+ * 
+ * @author Joseph Kirkish
+ * date 06/03/2015
+ */
+
+public class ifElseExplained {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//a single selection if statement operates on the principle of whether or not a condition is true or false
+				//if statements have two possibilities depending on whether the conditional statement is true or false
+		        //The if statement is when it is true
+		        //The else statement is when it is false
+				int age = 99;//variable is an int type initialized to be 99
+				
+				System.out.println("Example1");
+				if (age >= 21 )//conditional statement in parentheses read if age is greater than or equal to 21
+				{
+					System.out.println("Yes, you are allowed to go drinking with your young girlfriends");
+					//The conditional statement is false 
+				}
+				else
+				{   
+					//If the conditional statement was false this else statement would execute
+					System.out.println("No, I think you should stay out of trouble and stay home!");
+				}
+				
+				
+				
+				/*
+				 * Another example shows when the conditional statement is false. This means the else
+				 * statement would execute.   
+				 * 
+				 */
+				System.out.println();
+				System.out.println("Example 2");
+				
+					int age1 = 15;//variable is an int type initialized to be 15
+				
+				if (age1 >= 21 )//conditional statement in parentheses read if age1 is greater than or equal to 21
+				{
+					//If someone's age is true to be greater than or equal to 21, this print statement executes
+					System.out.println("Yes, you are allowed to go drinking with your young girlfriends");
+					
+				}
+				else
+				{   
+					//If the conditional statement was false this else statement would execute
+					System.out.println("No, I think you should stay out of trouble and stay home!");
+					//This else statement executes because the condition is false
+				}
+	}
+
+}
