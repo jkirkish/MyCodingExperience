@@ -1,0 +1,78 @@
+/*
+ * 
+ * 
+ * 
+ * @author Joseph Kirkish
+ * date 06/03/2015
+ */
+
+public class Looping {
+
+	/*Java provides three looping statements that allow program to perform 
+	 * statements repreatedly as as the loop continuation
+	 * condition is true.  The repetition statements are while, do while and for 
+	 * statements perform the action or group of actions.  
+	 * 
+	 * 
+	 */
+	public static void main(String[] args) {
+		
+              
+		//the while repetition statement allows you to specify that a program shold reprt
+		//an action while some condition remains true.  Example, 
+		/* When this wile statement begins execution, the value of variable product is 3.  Each 
+		 * iteration of the while statement multiplies product by 3, so product takes on the values 9 
+		 * 27, 81, and 243 successively.  When variable product becomes 243, the while statement condition
+		 * product <=1-- becomes false. This terminates the repetition. Not providing in the body of while 
+		 * statement an action that eventually causes the condition in the while to become flase normally results in 
+		 * logic error called an infinite loop that never terminates
+		 */
+		 int product = 3;
+		  while(product  <= 100){
+			  product = 3* product;//the statement executed to update the value of product
+			  System.out.print("The value of Product is: ");
+			  System.out.println(product);
+			  
+		  }
+		  System.out.println();
+		  /* The next example is a counter countrolled repetition
+		   * 
+		   */
+		  int counter = 1;
+		  while (counter <= 10) //loop continuatin condition
+		  {
+			  System.out.print(" While: " + counter);
+			  ++counter; //a pre-increment variable 
+		  }
+	          System.out.println();
+	          System.out.println();
+	        /*Another type of loop structure in Java is the for loop
+	         * for is a keyword
+	         * control variable as the initializer with a semicolon
+	         * Loop continuationCondition with a semicolon
+	         * and an increment of the control variable
+	         */ 
+		  
+		    
+	         for(int count = 1; count <= 10; count++){
+	        	 
+	        	 System.out.print(" For: " + " " + count);
+	         }
+	         System.out.println();
+	         System.out.println();
+	         /*A third type of loop structure is the do-while loop
+	          * This is similar to the ordinary while statement. The do while 
+	          * statements tests the loop-continuation condition after executing 
+	          * the loop's body; therefore the body always executes at least once.
+	          * 
+	          * 
+	          */
+	           int tracker = 1;
+	           
+	           do
+	           { 
+	        	   System.out.print(" Do is: " + tracker);
+	        	   ++tracker; //prefix increment
+	           }while(tracker <=10); //end of while loop with a semi colon
+	}
+}
