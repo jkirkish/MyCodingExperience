@@ -1,0 +1,42 @@
+/*
+ * 
+ * 
+ * 
+ * @author Joseph Kirkish
+ * date 06/03/2015
+ */
+public class flowControl {
+
+	//What is flow of control
+	//FLow of control is the order in which a program performs actions
+	/*Programs use selection statements to choose among alternative courses of actions.  For 
+	 * example suppose that the passing grade on the exam is 60.  We can write the pseudocode 
+	 * statement "If students grade is greater than or equal to 60, Print Passed"  This logic determines 
+	 * whether the condition "student's grade is greater than or equal to 60 is true.  If so, the print 
+	 * statement executes. If condition is false, the print statement is false.
+	 * 
+	 * 
+	 * 
+	 */
+	 
+	public static void main(String[] args) {
+	                 
+		int studentGrade1 = 45;
+		int studentGrade2 = 99;
+		
+		//This flow of control statement should be ignored as the conditional statement is false
+		if(studentGrade1 >= 60){
+			System.out.println("The Student1 Passed.");
+				
+		}
+		
+		
+		//This flow of control statement should be executed as the conditional statement is true
+		if(studentGrade2 >= 60){
+			
+			System.out.println("The Student2 Passed.");
+		}
+
+	}
+
+}
