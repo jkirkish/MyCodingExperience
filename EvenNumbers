@@ -1,0 +1,28 @@
+/*
+ * @Date 06/16/2016
+ * 
+ * @author Joseph Kirkish
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+public class EvenNumbersLessThan100 {
+
+	public static void main(String[] args) {
+
+		// Every even number printed that is from 0 to 100
+		for (int x = 0; x <= 100; x++) {
+
+			if (x % 2 == 0) {
+
+				System.out.println("X is: " + x);
+				
+			}
+		}
+
+	}
+
+}
