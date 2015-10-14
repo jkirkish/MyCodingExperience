@@ -1,0 +1,39 @@
+/*
+ * 
+ * 
+ * 
+ * @author Joseph Kirkish
+ * date 06/03/2015
+ */
+
+
+public class nestedIfElse {
+
+	public static void main(String[] args) {
+		
+		/*A program can test multiple cases by placing if...else statements inside another if...else statement
+		 * to create nested if..else statements.  This can go on for as many statements as you like.  
+		 */
+		
+		
+			int grade = 79; //we know that the grade is 79
+			
+			if (grade >= 90) //This is false because 79 is not greater than 90
+				System.out.println("A");
+			else
+				if(grade>=80)//This is false because 79 is not greater than 80
+					System.out.println("B");
+				else
+					if(grade>=70)//this is true because we know 79 is greater than 79 and before 80
+						System.out.println("C");//This print statement executes
+					else
+						if(grade>=60)//This is false
+							System.out.println("D");//This is false
+						else
+							System.out.println("F");//If all else was false this statement would execute.
+	}		
+		
+		
+}
+
+
