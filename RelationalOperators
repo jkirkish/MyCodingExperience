@@ -1,0 +1,29 @@
+/*
+ * 
+ * 
+ * author Joseph Kirkish date 06/02/2015
+ * 
+ */
+
+public class relationalOperators {
+
+	public static void main(String[] args) {
+		
+		//int variable declarations
+		int a = 5;
+		int b = 7;
+		int c = 5;
+		int d = 10;
+		int e = 15;
+		int f = 12;
+		
+		System.out.println(a == c); //true a is equal to c
+		System.out.println(b > d); //false b is not greater than d
+        System.out.println(f < d); //false f is not less than d
+        System.out.println(d >= e); // false d is not greater than or equal to e
+        System.out.println(a <= f);// true a is less than or equal to f
+        System.out.println(a >= c); //true a is equal to C
+        System.out.println(c!=d);//True c does not equal d
+	}
+
+}
