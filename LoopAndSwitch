@@ -1,0 +1,162 @@
+import java.util.Scanner;
+
+
+public class LoopAndSwitch {
+
+	public static void main(String[] args) {
+		
+		System.out.println("1) What is a switch statement?  Write a program to demonstrate switch statement");
+		System.out.println("\n\nEXAMPLE:");
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Please enter one choice a, b, c, d: ");
+		String reader = input.nextLine();
+		char expression1 = reader.charAt(0);
+		
+		/*1) What is a switch statement.  Write a program to demonstrate switch statement
+		 * A switch statement is a multiway branch that makes a decision based on an integral 
+		 * (integer or character) expression.
+		 * 
+		 * The switch statement begin with the keyword 'switch' followed by an integral expression
+		 * in parenthesis and called the controlling expression
+		 * 
+		 * Only four types of integral type expressions work in a switch construct.  These data types are
+		 * integer, byte, short, and char
+		 * 
+		 * 
+		 */
+		
+		switch(expression1){
+			
+		case 'a' : System.out.println("You must of choose a, WOW.");
+		           break;
+		           
+		case 'b' : System.out.println("Why, I think you choose b, I can read your thoughts.");
+				   break;
+		case 'c' : System.out.println("My lucky guess says you c. I must be telepathic to read your mind." );
+		           break;
+		case 'd' : System.out.println("What do you take me for, you chose d for dog. That was easy!");
+		           break;
+        default :  System.out.println("The letter should be a a single lower case letter. Do you understand?");
+		}
+		System.out.print("\n_________________________________________________________________________");
+		
+		//SWITCH IS APPLICABLE TO WHAT ALL DATA TYPES?
+		System.out.println("\n\n2)SWITCH IS APPLICABLE TO WHAT ALL DATA TYPES?");
+		System.out.println("A switch is applicable to char, integer, byte, short.  Notice is it 4 types only.");
+		
+System.out.print("\n_________________________________________________________________________");
+		
+		//WHAT IS THE USE OF A BREAK?
+		System.out.println("\n\n3)WHAT IS THE USE OF A BREAK?");
+		System.out.println("We need to include a BREAK to separate each case in the switch statement");
+		System.out.println("Otherwise, the code for the wrong case will also be executed.");
+		System.out.println("The compiler needs to know when the corresponding code for the case ends and not"
+				          + " execute additional code belonging to another case.The additional code of "
+				          + " other cases would be incorrect.");
+		System.out.println("Without a break statement each time a match occurs in the switch, the statements for that case adn subsequent cases execute until"
+				+ " + a break statement or the end of the swtich is encountered.");
+		System.out.println("Using a BREAK makes it easier to modify the switch statement and have it less error proned.");
+System.out.print("\n_________________________________________________________________________");
+
+		//WHAT IS THE USE OF A DEFAULT?
+        System.out.println("\n\n4) WHAT IS THE USE OF A DEFAULT? ");
+        System.out.println("The default is the last remaining possibility after all of the other cases have been looked at");
+        System.out.println("All of the other cases do not match the controlling expression, the default case executes");
+		System.out.println("The default section handles all values that are not explicitly handled by one of the case sections");
+		System.out.println("The default case is optional.");
+		
+System.out.print("\n_________________________________________________________________________");		
+
+		//WHAT IS LOOPING
+		System.out.println("\n\n5) WHAT IS LOOPING? ");
+		System.out.println("A portion of a program that repreats a statement or a group of statements"
+				+ " is called a loop");
+		System.out.println("The statement or group of statements to be repeated is called teh body of the loop.");
+		System.out.println("A could be used to compute tax brackets for each taxpayer in the municipality.");
+		System.out.println("There must be a means of exiting the loop.");
+		
+		
+		System.out.print("\n_________________________________________________________________________");
+		
+		//WHAT ARE THE DIFFERENT TYPES OF LOOPS?
+		System.out.println("\n\n6) WHAT ARE THE DIFFERENT TYPES OF LOOPS? ");
+		System.out.println("There are while loops, DO-While loops, and For loops");
+		
+		System.out.print("\n_________________________________________________________________________");
+		
+		//WHAT ARE STEPS LOOPS?
+				System.out.println("\n\n7) WHAT ARE STEPS FOR LOOPS? ");
+				System.out.println("Step one is to declare a loop with a control variable or lop counter ");
+				System.out.println("Step two is to frame a conditional statement");
+				System.out.println("Step three is to have an initial value fo rthe control variable.");
+				System.out.println("Step four is to increrement or decrement by which the control variable "
+						+ " is modified each time through the loop");
+				System.out.println("Step four is to update the condition or terminate the condition");
+		
+		System.out.print("\n_________________________________________________________________________");
+				
+		//WHEN TO USE EACH TYPE OF LOOP?
+               System.out.println("\n\n8)WHEN TO USE EACH TYPE OF LOOP?");
+               System.out.println("A while loop is used when the requirement is very restricted. The conditional statement is "
+               		+ " executed first and then the control variable is updated. A while loop is design to execute until the conditional statement"
+               		+ " is false.");
+			   System.out.println("A Do-while loop is almost similar to a whle loop. It is used when the requirements has more flexibility.  The control variable "
+			   		+ " is updated first and then the conditional statement is updated. The Do-WHile loop will have one more execution than a regular while loop."
+			   		+ " ");
+			   System.out.println("A for loop is used when the amount counted in known. You might use a for loop to iterate through a known number of counts. ");
+			   
+	     System.out.print("\n_________________________________________________________________________");
+				
+				//Write a program to demonstrate a while and do while loop.
+		               System.out.println("\n\n9)Write a program to demonstrate a while and do while loop.");
+		               //do..while repetition statement
+		               
+		               int doCounter = 0;//initialize the doWhile counter
+		               int whileCounter= 0; //initialize the whileCounter
+		               
+		               do
+		               {
+		                  System.out.println("doCounter equals: " + doCounter);
+		                  ++doCounter;
+		               }while (doCounter <= 10);
+		               
+		               System.out.println();
+		               
+		               //while repetition statement
+		               while(whileCounter <= 10){
+		            	   
+		            	   System.out.println("whileCounter equals: "+ whileCounter);
+			                  ++whileCounter;
+		               }
+			   
+		  System.out.print("\n_________________________________________________________________________");
+		  
+		  System.out.println("\n\n10)Differences between the while and do while loop.");
+		  //while loop differences
+		  System.out.printf("While Loop"); 
+		  System.out.println("-----------");
+		  System.out.println("The conditional expression is evaluated first"); 
+		  System.out.println("There is no keyword do."); 
+		  System.out.println("The while loop will not execute at all if conditional expression is false"); 
+		  
+		  System.out.println();
+		  //do while differences
+		  System.out.println("Do-While Loop");
+		  System.out.println("-------------");
+		  System.out.println("There is a keyword called 'do'. ");
+		  System.out.println("The loop will execute at least once.");
+		  System.out.println("The conditional statement is evaluated last");
+		  System.out.println("The loop executes one last time before ending");
+		  
+	}
+}
+		
+	
+	
+		
+		  
+
+	
+
+
