@@ -1,0 +1,48 @@
+/*
+ * 
+ * @author Joseph Kirkish  date 06/02/2015
+ */
+
+
+public class IncrementAndDecrementOperators {
+
+	public static void main(String[] args) {
+		
+		int a;
+		
+		
+		//demonstrate postfix increment operator
+		a = 10;
+		System.out.println(a);  //prints 10
+		System.out.println(a++); //prints 10 then post increments 
+		System.out.println(a); //prints 11
+		
+		
+		System.out.println(); // skip a line
+		
+		//demonstrate prefix increment operator
+		a = 10;
+		System.out.println(a); //prints 10
+		System.out.println(++a); // preincrements then prints 11
+		System.out.println(a); //prints 11
+		
+		System.out.println("--------------------------------------------------------");
+		//demonstrate postfix decrement operator
+				a = 10;
+				System.out.println(a);  //prints 10
+				System.out.println(a--); //prints 10 then post decrements 
+				System.out.println(a); //prints 9
+				
+				
+				System.out.println(); // skip a line
+				
+				//demonstrate prefix decrement operator
+				a = 10;
+				System.out.println(a); //prints 10
+				System.out.println(--a); // preincrements then prints 9
+				System.out.println(a); //prints 9
+		
+
+	}//end main
+
+}//end class
